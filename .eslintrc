@@ -19,6 +19,7 @@
         "prettier/prettier": "error",
         "indent": [1, 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
         "no-loop-func": 0,
-        "no-nested-ternary": 1
+        "no-nested-ternary": 1,
+        "arrow-parens": [1, "as-needed"]
     }
 }
