@@ -7,6 +7,9 @@
   "author": "Luciano Nooijen <lucianonooijen@gmail.com>",
   "license": "GPL-3.0",
   "private": false,
+  "scripts": {
+    "dev": "nodemon"
+  },
   "dependencies": {
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
@@ -30,6 +33,7 @@
     "eslint-plugin-react": "^7.9.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
     "parcel-bundler": "^1.9.0",
     "postcss": "^6.0.22",
     "postcss-modules": "^1.1.0",
