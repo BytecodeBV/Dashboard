@@ -15,11 +15,6 @@ const port = process.env.PORT;
 // Register middleware
 middleware.register(app);
 
-// Temp index route
-app.get('/', (req, res) => {
-    res.send('hello world');
-});
-
 // Register controllers
 app.use('/', controllers);
 
