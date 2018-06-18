@@ -3,6 +3,7 @@ require('dotenv').config();
 
 // NPM Dependency imports
 const express = require('express');
+const path = require('path');
 
 // Project dependency imports
 const middleware = require('./middleware');
@@ -14,6 +15,9 @@ const port = process.env.PORT;
 
 // Register middleware
 middleware.register(app);
+
+// Set static directory
+app.use('/public', express.static(path.join(__dirname, 'public/dist')));
 
 // Register controllers
 app.use('/', controllers);
