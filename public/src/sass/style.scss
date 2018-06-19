@@ -1,0 +1,13 @@
+@import 'abstracts/abstracts';
+@import 'base/base';
+@import 'components/components';
+@import 'layout/layout';
+@import 'pages/pages';
+@import 'themes/themes';
+@import 'vendors/vendors';
+@import 'shame';
+
+body {
+    background-color: $gray; // Just to test if it's working
+}
+
