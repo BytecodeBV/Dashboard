@@ -8,19 +8,23 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
+    "cli": "node ./cli/cli.js",
     "dev": "concurrently 'yarn run dev:client' 'yarn run dev:server'",
     "dev:client": "rm -rf public/dist && parcel public/src/ts/main.ts --out-dir public/dist",
     "dev:server": "nodemon",
     "build": "parcel build public/src/ts/main.ts --out-dir public/dist",
-    "reinstall": "rm -rf node_modules && yarn"
+    "reinstall": "rm -rf node_modules && yarn",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\""
   },
   "dependencies": {
     "chalk": "^2.4.1",
+    "commander": "^2.15.1",
     "concurrently": "^3.6.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "helmet": "^3.12.1",
+    "inquirer": "^6.0.0",
     "mongoose": "^5.1.5",
     "morgan": "^1.9.0"
   },

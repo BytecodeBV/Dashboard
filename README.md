@@ -18,6 +18,10 @@ Run `cp .env.example .env` and set your correct environment variables. This file
 
 For development, run `yarn run dev`.
 
+## CLI
+
+To run the Dashboard CLI, run `yarn run cli [args]`. To see which arguments are available, run `yarn run cli --help`.
+
 ### Contributors
 
 * [Luciano Nooijen](https://github.com/lucianonooijen) - ([Bytecode Digital Agency B.V.](https://bytecode.nl))
