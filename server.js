@@ -19,8 +19,9 @@ const port = process.env.PORT;
 // Register middleware
 middleware.register(app);
 
-// Set static directory
+// Set static directories
 app.use('/public', express.static(path.join(__dirname, 'public/dist')));
+app.use('/public/img', express.static(path.join(__dirname, 'public/img')));
 
 // Register routes
 app.use('/', routes);
