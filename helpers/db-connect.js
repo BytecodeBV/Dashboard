@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
+const logger = require('./logger');
 
 mongoose.Promise = global.Promise;
 mongoose
     .connect(process.env.MONGO_URI)
-    .then(() => console.info('MongoDB Connected'))
+    .then(() => logger.info('MongoDB Connected'))
     .catch(err => {
-        console.error(`MongoDB connection error:\n ${err}`);
+        logger.error(`MongoDB connection error:\n ${err}`);
     });
 
 // Import models

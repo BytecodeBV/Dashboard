@@ -11,6 +11,7 @@ require('./helpers/db-connect');
 // Project dependency imports
 const middleware = require('./middleware');
 const routes = require('./routes');
+const logger = require('./helpers/logger');
 
 // File variables
 const app = express();
@@ -28,5 +29,5 @@ app.use('/', routes);
 
 // Run Express server
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`); // eslint-disable-line
+    logger.info(`Server listening on port ${port}`); // eslint-disable-line
 });
