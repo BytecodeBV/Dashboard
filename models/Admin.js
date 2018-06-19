@@ -24,4 +24,4 @@ const AdminSchema = new mongoose.Schema({
 });
 
 // Create collection and add schema
-mongoose.model('Admin', AdminSchema);
+module.exports = mongoose.model('Admin', AdminSchema);
