@@ -8,9 +8,14 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
-    "dev": "nodemon"
+    "dev": "concurrently 'yarn run dev:client' 'yarn run dev:server'",
+    "dev:client": "rm -rf public/dist && parcel public/src/ts/main.ts --out-dir public/dist",
+    "dev:server": "nodemon",
+    "build": "parcel build public/src/ts/main.ts --out-dir public/dist",
+    "reinstall": "rm -rf node_modules && yarn"
   },
   "dependencies": {
+    "concurrently": "^3.6.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
@@ -37,7 +42,7 @@
     "jquery": "^3.3.1",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
-    "parcel-bundler": "^1.9.0",
+    "parcel-bundler": "^1.9.2",
     "postcss": "^6.0.22",
     "postcss-modules": "^1.1.0",
     "prettier": "^1.13.5",
