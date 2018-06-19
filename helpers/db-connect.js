@@ -10,4 +10,4 @@ mongoose
     });
 
 // Import models
-require('../models/Admin');
+require('../models');
