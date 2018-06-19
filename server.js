@@ -5,6 +5,9 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 
+// Mongoose setup
+require('./helpers/db-connect');
+
 // Project dependency imports
 const middleware = require('./middleware');
 const controllers = require('./controllers');
