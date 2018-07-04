@@ -53,6 +53,7 @@
     "prettier": "^1.13.5",
     "prettier-tslint": "^0.4.0",
     "prettierrc": "^0.0.0-5",
+    "response-time": "^2.3.2",
     "tslint": "^5.10.0",
     "tslint-config-airbnb": "^5.9.2",
     "tslint-eslint-rules": "^5.3.1",
