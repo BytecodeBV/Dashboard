@@ -9,5 +9,9 @@ mongoose
         logger.error(`MongoDB connection error:\n ${err}`);
     });
 
+if (process.env.NODE_ENV === 'development') {
+    mongoose.set('debug', true);
+}
+
 // Import models
 require('../models');
