@@ -1,6 +1,12 @@
 // Set NodeJS process environment variables
 require('dotenv').config();
 
+// Use Sqreen
+if (process.env.SQREEN_ENABLE) {
+    require('sqreen');
+    require('./helpers/logger').info('Sqreen enabled');
+}
+
 // NPM Dependency imports
 const express = require('express');
 const path = require('path');
