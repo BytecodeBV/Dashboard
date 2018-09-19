@@ -1,5 +1,7 @@
 # Bytecode Client Dashboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BytecodeBV/Dashboard.svg)](https://greenkeeper.io/)
+
 ## Requirements
 
 For this project, you will need the following dependencies installed on your device:
