@@ -25,3 +25,4 @@ To run the Dashboard CLI, run `yarn run cli [args]`. To see which arguments are 
 ### Contributors
 
 * [Luciano Nooijen](https://github.com/lucianonooijen) - ([Bytecode Digital Agency B.V.](https://bytecode.nl))
+* [Jeroen van Steijn](https://github.com/jeroenvansteijn) - ([Bytecode Digital Agency B.V.](https://bytecode.nl))
