@@ -4,7 +4,7 @@
   "description": "Client and project dashboard created by Bytecode Digital Agency B.V.",
   "main": "server.js",
   "repository": "https://github.com/BytecodeBV/Dashboard.git",
-  "author": "Luciano Nooijen <lucianonooijen@gmail.com>",
+  "author": "Bytecode <info@bytecode.nl>",
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
